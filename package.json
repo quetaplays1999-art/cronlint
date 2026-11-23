@@ -1,0 +1,51 @@
+{
+  "name": "cronlint-cli",
+  "version": "1.0.0",
+  "description": "Zero-dependency cron expression validator, human-readable explainer, and UTC schedule calculator CLI and library.",
+  "type": "module",
+  "license": "MIT",
+  "author": "quetaplays1999-art",
+  "homepage": "https://github.com/quetaplays1999-art/cronlint#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quetaplays1999-art/cronlint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quetaplays1999-art/cronlint/issues"
+  },
+  "keywords": [
+    "cron",
+    "crontab",
+    "cron-parser",
+    "cron-validator",
+    "cron-explain",
+    "schedule",
+    "linter",
+    "cli",
+    "zero-dependency",
+    "esm"
+  ],
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "bin": {
+    "cronlint": "./bin/cronlint.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
